@@ -2,9 +2,9 @@
 
 namespace Lab1Charp
 {
-    class Program
+    public class Program
     {
-        static void Main()
+        public static void Main()
         {
             // Налаштування для коректного відображення української мови у консолі
             Console.OutputEncoding = System.Text.Encoding.UTF8;
@@ -45,7 +45,7 @@ namespace Lab1Charp
         }
 
         // ================= ЗАВДАННЯ 1.1 =================
-        static void Task1_1()
+        public static void Task1_1()
         {
             Console.Write("Введіть периметр квадрата (a): ");
             if (double.TryParse(Console.ReadLine(), out double a) && a >= 0)
@@ -61,7 +61,7 @@ namespace Lab1Charp
         }
 
         // ================= ЗАВДАННЯ 2.1 =================
-        static void Task2_1()
+        public static void Task2_1()
         {
             Console.Write("Введіть перше число: ");
             double.TryParse(Console.ReadLine(), out double num1);
@@ -74,7 +74,7 @@ namespace Lab1Charp
         }
 
         // ================= ЗАВДАННЯ 3.1 =================
-        static void Task3_1()
+        public static void Task3_1()
         {
             Console.Write("Введіть координату x: ");
             double.TryParse(Console.ReadLine(), out double x);
@@ -105,7 +105,7 @@ namespace Lab1Charp
         }
 
         // ================= ЗАВДАННЯ 4.2 =================
-        static void Task4_2()
+        public static void Task4_2()
         {
             Console.Write("Введіть порядковий номер дня поточного місяця: ");
             if (int.TryParse(Console.ReadLine(), out int day) && day > 0)
@@ -131,7 +131,7 @@ namespace Lab1Charp
         }
 
         // ================= ЗАВДАННЯ 5.21 =================
-        static void Task5_21()
+        public static void Task5_21()
         {
             Console.Write("Введіть перше число: ");
             double.TryParse(Console.ReadLine(), out double a);
@@ -144,13 +144,13 @@ namespace Lab1Charp
         }
 
         // Функція для завдання 5.21
-        static double CubeOfSum(double num1, double num2)
+        public static double CubeOfSum(double num1, double num2)
         {
             return Math.Pow(num1 + num2, 3);
         }
 
         // ================= ЗАВДАННЯ 6.6 =================
-        static void Task6_6()
+        public static void Task6_6()
         {
             Console.Write("Введіть значення x: ");
             double.TryParse(Console.ReadLine(), out double x);
